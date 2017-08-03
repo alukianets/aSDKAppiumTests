@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, "/Users/andrej/PycharmProjects/aSDKAppiumTests/locators")
+sys.path.insert(0, "../locators")
 
 from main_page_locators import MainPageLocators
 

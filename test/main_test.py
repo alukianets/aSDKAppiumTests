@@ -3,7 +3,7 @@ import unittest
 
 import sys
 
-sys.path.insert(0, "/Users/andrej/PycharmProjects/aSDKAppiumTests/pages")
+sys.path.insert(0, "../pages")
 
 import main_page
 
