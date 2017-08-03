@@ -45,9 +45,6 @@ class Test(unittest.TestCase):
         main_screen.make_log_out()
 
 
-def tearDown(self):
-    self.driver.close()
-
-
-if __name__ == "__main__":
-    unittest.main()
+if __name__ == '__main__':
+    suite = unittest.TestLoader().loadTestsFromTestCase(Test)
+    unittest.TextTestRunner(verbosity=2).run(suite)
