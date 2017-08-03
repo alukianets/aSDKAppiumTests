@@ -5,6 +5,8 @@ import sys
 
 sys.path.insert(0, "/Users/andrej/PycharmProjects/aSDKAppiumTests/pages")
 
+import main_page
+
 from appium import webdriver
 
 # Returns abs path relative to this file and not cwd
@@ -38,9 +40,9 @@ class Test(unittest.TestCase):
         self.driver.quit()
 
     def test_log_out(self):
-        main_page = page.MainPage(self.driver)
-        main_page.open_main_menu()
-        main_page.make_log_out()
+        main_screen = main_page.MainPage(self.driver)
+        main_screen.open_main_menu()
+        main_screen.make_log_out()
 
 
 def tearDown(self):
